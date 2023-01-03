@@ -8,7 +8,3 @@ def print_last_digit(number):
 
     print("{:d}".format(ld), end='')
     return (ld)
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-
