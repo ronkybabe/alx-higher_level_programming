@@ -15,10 +15,10 @@ if __name__ == '__main__':
         )
     cur = conn.cursor()
     cur.execute("SELECT * FROM states WHERE name IS NOT " +
-                "NULL AND LEFT = 'N'ORDER BY id ASC")
+                "NULL AND LEFT(CAST(name AS BINARY), 1) = 'N'ORDER BY id ASC;")
     query_rows = cur.fetchall()
 
     for row in query_rows:
         print(row)
 
-    cur.close()
+    cur.close(i)
