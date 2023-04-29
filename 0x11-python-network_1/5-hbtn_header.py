@@ -9,6 +9,6 @@ from sys import argv
 
 if __name__ == '__main__':
     if len(argv) > 1:
-        res = requests.get(argv[1])
+        res = req.get(argv[1])
         if 'X-Request-Id' in res.headers:
             print(res.headers['X-Request-Id'])
