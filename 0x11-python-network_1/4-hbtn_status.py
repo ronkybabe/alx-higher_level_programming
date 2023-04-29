@@ -6,7 +6,7 @@ import requests
 
 
 if __name__ == "__main__":
-    """ fetches https://alx-intranet.hbtn.io/status"""
+    """ fetches http://0.0.0.0:5050/status"""
     res = requests.get('https://intranet.hbtn.io/status')
     print('Body response:')
     print('\t- type: {}'.format(type(res.text)))
